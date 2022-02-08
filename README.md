@@ -6,7 +6,14 @@ Scripts for scraping customer search results for future analysis.  The POC scrip
 ## Prerequisites
 1. You must have a working local python set up with the appropriate modules installed (all can be installed with pip)
 2. You have the latest version of [chromedriver](https://chromedriver.chromium.org/) set up and running
-3. Install Selenium pip3 install selenium or pip install selenium if using python2
+3. Install Selenium - pip3 install selenium or pip install selenium if using python2
+4. Install colorama - pip3 install colorama
+5. Install numpy - pip3 insall nympy
+6. Install yaspin - pip3 install yaspin
+7. Install PIL - pip3 install pillow
+8. Quarantine chromedriver so it will run - sudo xattr -d com.apple.quarantine /usr/local/bin/chromedriver
+9. Add output directory in the format /Users/[youruserdirectory]/Dev/site_search_POC/search-query-performance-analysis/output/
+10. Update line 61 to match the path you just created in step 9
 ## Run script 
 1. If you simply invoke the script `python blm_test.py`there is one default search term that the script will use.  This is good for testing during local setup
 2. Alternatively you can pass the name of a .csv file `python blm_test.py search_terms.csv` that contains multiple search terms that the script will iterate through.  File structure must be `search term, /n` for each search term
