@@ -6,6 +6,7 @@ Scripts for scraping customer search results for future analysis.  The POC scrip
 ## Prerequisites
 1. You must have a working local python set up with the appropriate modules installed (all can be installed with pip)
 2. You have the latest version of [chromedriver](https://chromedriver.chromium.org/) set up and running
+3. Install Selenium pip3 install selenium or pip install selenium if using python2
 ## Run script 
 1. If you simply invoke the script `python blm_test.py`there is one default search term that the script will use.  This is good for testing during local setup
 2. Alternatively you can pass the name of a .csv file `python blm_test.py search_terms.csv` that contains multiple search terms that the script will iterate through.  File structure must be `search term, /n` for each search term
